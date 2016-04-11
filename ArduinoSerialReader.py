@@ -1,12 +1,12 @@
 import serial
 
-print "Port Connection? (Leave Blank = ttyAMA0) "
+print "Port Connection? (Leave Blank = /dev/ttyAMA0) "
 port = raw_input()
 print "Serial Baud Rate? (Leave Blank = 115200) "
 baud = raw_input()
 
 if port == "" :
-  port = "ttyAMA0"
+  port = "/dev/ttyAMA0"
 if baud == "" :
   baud = "115200"
 
